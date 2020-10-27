@@ -4,7 +4,7 @@ import CharacterDetail from './CharacterDetail';
 import { getCharacterById } from '../../Services/avatarApi';
 import { MemoryRouter, Route } from 'react-router-dom';
 
-jest.mock('../../ervices/avatarApi.js');
+jest.mock('../../services/avatarApi.js');
 
 describe('CharacterDetail component', () => {
   it('display a character', () => {
