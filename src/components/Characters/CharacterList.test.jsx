@@ -4,7 +4,7 @@ import { MemoryRouter } from 'react-router-dom';
 import CharacterList from './CharacterList';
 import { getCharacters } from '../../Services/avatarApi';
 
-jest.mock('../../Services/avatarAPi.js');
+jest.mock('../../Services/avatarApi.js');
 
 describe('CharacterList component', () => {
   it('displays a list of characters', async() => {
