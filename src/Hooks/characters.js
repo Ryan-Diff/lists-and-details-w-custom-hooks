@@ -18,7 +18,7 @@ export const useCharacters = page => {
 };
 
 export const useCharacterById = id => {
-    const [loading, setLoading] = useSate(true);
+    const [loading, setLoading] = useState(true);
     const [character, setCharacter] = useState(null);
 
     useEffect(() => {
