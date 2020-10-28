@@ -4,10 +4,10 @@ export const getCharacters = async(page =1) => {
 
     if(!res.ok) throw 'Sorry about it';
 
-    return json.results.map(character => ({
-        id: character.id,
+    return json.map(character => ({
+        CharacterId: character._id,
         name: character.name,
-        imageUrl: character.imageUrl
+        photoUrl: character.photoUrl
     }));
 };
 
@@ -18,9 +18,9 @@ export const getCharacterById = async(CharacterId) => {
     if(!res.ok) throw 'Sorry about it';
 
     return {
-        id: json.CharacterId,
+        CharacterId: json._id,
         name: json.name,
-        imageUrl: json.imageUrl,
+        photoUrl: json.photoUrl,
         position: json.position,
         affiliation: json.affiliation
     };

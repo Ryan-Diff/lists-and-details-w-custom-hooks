@@ -9,14 +9,14 @@ jest.mock('../../Services/avatarApi.js');
 describe('CharacterDetail component', () => {
   it('display a character', () => {
     getCharacterById.mockResolvedValue({
-      id: 1,
+      CharacterId: 1,
       name: 'Aang',
-      imageUrl: 'Aang',
+      photoUrl: 'Aang',
       position: 'Dead Avatar',
       affiliation: 'The World'
     });
     render(<MemoryRouter initialEntries={['/character/1']}>
-      <Route path="/character/:id" component={CharacterDetail}/>
+      <Route path="/character/:CharacterId" component={CharacterDetail}/>
     </MemoryRouter>);
 
     screen.getByText('Loading...');

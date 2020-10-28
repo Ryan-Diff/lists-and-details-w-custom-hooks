@@ -5,6 +5,7 @@ exports[`Character component renders a character 1`] = `
   <figure>
     <img
       alt="Ryan"
+      src="Test"
     />
     <figcaption>
       Ryan

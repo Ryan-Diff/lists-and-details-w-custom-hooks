@@ -9,7 +9,7 @@ jest.mock('../../Services/avatarApi.js');
 describe('CharacterList component', () => {
   it('displays a list of characters', async() => {
     getCharacters.mockResolvedValue([
-      { id: 1, name: 'Aang', imageUrl: 'Aang.png' }
+      { CharacterId: 1, name: 'Aang', photoUrl: 'Aang.png' }
     ]);
     render(<MemoryRouter>
       <CharacterList />
