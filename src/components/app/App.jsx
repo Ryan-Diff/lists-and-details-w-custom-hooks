@@ -4,8 +4,8 @@ import {
   Switch,
   Route
 } from 'react-router-dom';
-import CharacterDetailPage from '../../pages/CharacterDetailPage';
-import CharacterPage from '../../pages/CharacterPage';
+import CharacterDetailPage from '../../Pages/CharacterDetailPage';
+import CharacterPage from '../../Pages/CharacterPage';
 
 export default function App() {
   return (
